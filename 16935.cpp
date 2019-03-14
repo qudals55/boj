@@ -19,6 +19,7 @@ void solve(int t){
         for(int i =0; i<n/2;i++) for(int j =0; j <m/2;j++) 
         arr_cp[i][j] = arr[i+n/2][j], arr_cp[i+n/2][j] = arr[i+n/2][j+m/2], arr_cp[i][j+m/2] =arr[i][j], arr_cp[i+n/2][j+m/2] = arr[i][j+m/2];
     }
+    
     else{
         for(int i =0; i<n/2;i++) for(int j =0; j <m/2;j++) 
         arr_cp[i][j] = arr[i][j+m/2], arr_cp[i][j+m/2] = arr[i+n/2][j+m/2], arr_cp[i+n/2][j] =arr[i][j], arr_cp[i+n/2][j+m/2] = arr[i+n/2][j];
